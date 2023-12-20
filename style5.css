@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+
+
+:root{
+    --mainrclr: #ff0099;
+    --onhoverclr: #fff;
+    --classback: #5EB6E1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    transition: .2s;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.header{
+    padding: 1.5rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0%;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1000;
+}
+#logo{
+    color:black;
+    font-size: 3rem;
+}
+#logo span{
+    color: #ff0099;
+
+}
+/* Navbar Starts */
+.navbar a{
+    color: #ff0099;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    position: relative;
+}
+.navbar a:hover{
+    color: #000;
+}
+.navbar a:after{
+    content: '';
+    position: absolute;
+    background: #000;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    top: 100%;
+    margin-top: 10px;
+    transition: 1s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+.icons div{
+    font-size: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.icons div:hover{
+    color: #ff0099;
+}
+#menu-bars{
+    display: none;
+}
+.navbar.active{
+    left: 0;
+}
+#logo2{
+    display: none;
+}
+#logo2{
+    font-size: 2.5rem;
+    color: #000;
+}
+#logo2 span{
+    color: #fff;
+}
+.form-search{
+    width: 50%;
+    position: absolute;
+    top: 100%;
+    padding: 1.5rem;
+    right: -100%;
+}
+.form-search input{
+    width: 100%;
+    padding: 1.5rem;
+    outline: none;
+    border: 1px solid var(--mainrclr);
+    border-radius: 15px;
+}
+.form-search.active{
+    right: 2rem;
+}
+.background-imgaee{
+    background: url('Images/Home/Gym5.jpeg');
+    width: 100%;
+    height: 100vh;
+    margin-top:0 ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-content{
+    position: absolute;
+    top: 45%;
+    padding-left: 7%;
+}
+.background-content p,h2{
+    color: #fff;
+}
+.background-content p{
+    font-size: 1.5rem;
+}
+.background-content h2{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.background-content a{
+    padding: 1.5rem 3rem;
+    background-color: #ff0099;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 10px;
+} 
+/* About Us starts */
+.about1-us-main{
+    flex: 1 1 300px;
+    bottom: top;
+    padding: 3rem 7%;
+    font-size: 30px;
+    position: relative;
+    margin: 1rem 0;
+}
+.about1-us-main h1{
+    color: #ff0099;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: top;
+    font-size: 30px;
+    position: relative;
+    margin: 1rem 0;
+}
+.main-about1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.inner-about1{
+    flex: 1 1 45rem;
+    margin: 1rem 0;
+}
+.inner-content{
+    padding: 0  .5rem;
+}
+.inner-content h2{
+    color: #000;
+    font-size: 30px;
+    position: relative;
+    margin: 1rem 0;
+}
+.inner-content h2 span::after{
+    content: '';
+    position: absolute;
+    background: var(--mainrclr);
+    top: 100%;
+    left: 0;
+    width: 20%;
+    height: 2px;
+}
+.unique{
+    color: #000;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+.Lorem{
+    font-size: 4rem;
+    margin: 4rem 0;
+    margin-bottom: 35px;
+    color: #ff0099;
+}
+.Join-us{
+    font-size: 2rem;
+    margin: 1rem 0;
+    margin-bottom: 35px;
+}
+.inner-about1 img{
+    width: 100%;
+}
+.inner-content a{
+    padding: 1.5rem 4rem;
+    background: var(--mainrclr);
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+.imgcontent{
+    display: flex;
+    align-items: center;
+}
+.firstimg{
+    height: 300px;
+    object-fit: cover;
+}
+.only-images{
+    margin-top: 10px;
+}
+
+/* Our Prices */
+.main-prices-sec{
+    padding: 10rem 10%;
+    
+    
+}
+.main-prices-sec h1{
+    font-size: 45px;
+    color: #ff0099;
+    text-align: center;
+    margin-top: 0%;
+    font-size: 30px;
+    position: relative;
+    margin: 1rem 0;
+}
+.main-prices{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.inner-prices{
+    flex: 1 1 300px;
+    position: relative;
+}
+.inner-prices .inner-content img{
+    width: 100%;
+}
+.price-inner-content {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 30%;
+}
+.price-inner-content p{
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+.price-inner-content a{
+    font-size: 1.5rem;
+}
+.price-inner-content{
+    text-align: center;
+}
+.inner-content .clasic1{
+    padding: 1rem 2rem;
+    background: #ff0099;
+    color: #fff;
+}
+.inner-content .clasic2{
+    padding: 1rem 2rem;
+    background: #5EB6E1;
+    color: #fff;
+}
+.inner-content .clasic3{
+    padding: 1rem 2rem;
+    background: purple;
+    color: #fff;
+}
+/* Classes Starts */
+.our-class{
+    padding: 4rem 7%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: top;
+    
+}
+.class-main-content{
+    width: 60%;
+}
+.class-main-content h1{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin: 1rem 0;
+}
+h1{
+    position: absolute;
+    top: 0;
+}
+.class-main-content p{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.our-class-gallery{
+    padding: 0 7%;
+}
+.main-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: 2.5rem;
+}
+.inner-galler{
+    flex: 1 1 300px;
+    position: relative;
+}
+.inner-galler img{
+    width: 30%;
+    margin-left: auto;
+}
+/*.inner-galler i{
+    font-size: 3rem;
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+}*/
+.inner-galler p{
+    font-size: 28px;
+    top: 100px;
+    left: 31%;
+    position: absolute;
+    
+
+    
+}
+.gallery-icons{
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    height: 50%;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    height: 50%;
+}
+.gallery-icons a{
+    display: block;
+    background: #fff;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    
+    transition: 1s;
+    cursor: pointer;
+    color: #ff0099;
+
+}
+.inner-galler:hover .gallery-icons a{
+    opacity: 1;
+}
+
+/* Our Contact */
+.our-team{
+    padding: 3rem 10%;
+}
+.our-team h1{
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 30px;
+    position: relative;
+    margin: 1rem 0;
+}
+.main-our-team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.inner-team{
+    flex: 1 1 300px;
+}
+.inner-team img{
+    width: 100%;
+}
+.team-icons{
+    position: absolute;
+    top: 27rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem; 
+}
+.team-icons a{
+    display:block;
+    background: #000;
+    border: 1px solid #000;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    right: 10%;
+    
+    transition: 1s;
+    cursor: pointer;
+    color: #ff0099;
+}
+.inner-team h2{
+    color: #000;
+    font-size: 25px;
+    text-align: center;
+}
+
+.inner-team h3{
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+}
+.inner-galler:hover .gallery-icons a{
+    opacity: 1;
+}
+/* Contact Us */
+.main-contact{
+    padding: 4rem 7%;
+}
+.main-inner-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    background: #000;
+}
+.inner-contact{
+    flex: 1 1 45rem;
+    
+}
+.inner-contact .Contact-im img{
+     width: 100%;
+}
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-content h2{
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 15px;
+    margin-left: 2rem;
+}
+.contact-content h2 span{
+    position: relative;
+}
+.contact-content h2 span:after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ff0099;
+    width: 100%;
+    height: 2px;
+}
+.contact-content input{
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid var(--mainrclr);
+    background: #000;
+}
+.contact-content textarea{
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid var(--mainrclr);
+    background: #000;
+}
+.btn-contact{
+    padding: 0.8rem 1rem;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    background-color: #fff;
+    color: #ff0099;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+/*Login & sign up*/
+body1 {
+    margin: 55px auto;
+    padding: 50px;
+    display:flex;
+    justify-content: right;
+    align-items: right;
+    min-height: 100vh;
+    font-family: sans-serif;
+    margin-bottom: 150px;
+    overflow: scroll;
+    position: absolute;
+    
+    
+}
+.main2 {
+    width: 480px;
+    height: 580px;
+    background: rgb(211, 51, 195);
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 5px 30px 50px black;
+}
+#chk {
+    display: none;
+}
+.signup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+label {
+    color: #fff;
+    font-size: 35px;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    margin-bottom: 10px;
+}
+input {
+    width: 60%;
+    height: 20px;
+    background: #fff;
+    justify-content: center;
+    display: flex;
+    margin: 18px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+}
+button {
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: rgb(233, 74, 217);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 18px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: .3s ease-in;
+    cursor: pointer;
+    box-shadow: 5px 20px 40px black;
+}
+button:hover {
+    background: rgb(211, 51, 195);
+}
+.login {
+    height: 500px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(-355px);
+    transition: .8s ease-in-out;
+}
+.login label {
+    color: #c433bf;
+    transform: scale(.6);
+}
+.login p {
+    text-align: center;
+    padding: 15px;
+}
+#chk:checked ~ .login {
+    transform: translateY(-200px);
+}
+#chk:checked ~ .login label {
+    transform: scale(1);
+}
+#chk:checked ~ .signup label {
+    transform: scale(0.6);
+}
+/*BMI Calcolator*/
+/*
+
+}
+.box{
+    width: 600px;
+    background: #fff;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.5);
+    float: right;
+    margin-right: 100px;
+}*/
+.one{
+    max-width: 1000px;
+    margin: 200px auto;
+    padding: 40px;
+    background-color: #c433bf;
+    border-radius: 40px;
+    float: right;
+    margin-right: 150px;
+    box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+
+}
+.one td {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #eee;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slid {
+    0%{
+        background-image: url('Images/Home/Gym9.jpeg');
+    }
+    33%{
+        background-image: url('Images/About/Gym2.jpeg');
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+    #menu-bars{
+        display: initial;
+    }
+    .navbar{
+        position: absolute;
+        top: 0%;
+        left: -100%;
+        background: #ff0099;
+        width: 30rem;
+        height: 100vh;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+        color: #fff;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    #logo2{
+        display: block;
+    }
+    .form-search{
+        width: 90%;
+    }
+    .background-imgaee{
+        background:  url(Images/About/Gym2.jpeg);
+        width: 100%;
+        background-position: right ;
+    }
+    .background-content{
+        padding: 5rem 1rem;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 30%;
+        padding-left: 7%;
+    }
+    .imgcontent{
+        flex-direction: column;
+    }
+    .inner-content a{
+        margin-bottom: 20px;
+    }
+    .inner-about1{
+        padding: 2rem 0;
+    }
+}
+    

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <!--CSS Link-->
+    <link rel="stylesheet" href="style5.css"/>
+    <!--font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="" id="logo">Lean&<span>Lift</span></a>
+   <!-------------Navbar----------->
+        <nav class="navbar">
+            <a href="" id="logo2">Lean&<span>Lift</span></a>
+            <a href="index.html">Home</a>
+            <a href="Price.html">Price&Time</a>
+            <a href="About1.html">About</a>
+            <a href="Classes.html">Classes</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Sign &login.html">Signup &Login</a>
+        </nav>
+        <div class="icons">
+            <div id="search-form" class="fa-solid fa-user"></div>
+            <div id="menu-bars" class="fas fa-bars"></div>
+
+            <div class="form-search">
+                <input type="search" placeholder="Search Here">
+            </div>
+        </div>
+    </header>
+    </body>
+
+    <!------------------Login & sign up--------------------->
+    <body1>
+    <head>
+        <title>Signup &Login Form</title>
+    </head>
+    
+        <div class="main2">
+            <input type="checked" id="chk" aria-hidden="true">
+
+            <div class="signup">
+                <form action="/">
+                    <label for="chk" aria-hidden="true">Sign up</label>
+                    <input type="text" name="text" placeholder="User name" required="">
+
+                    <input type="email" name="email" id="" placeholder="Email" required="">
+                    <input type="password" name="pswd" placeholder="password" id="" required="">
+                    <input type="password" name="pswd" placeholder="Confirm password" id="" required="">
+                   <button href="index.html">Sign up</button> 
+                </form>
+            </div>
+            <div class="login">
+                <form action="/">
+                    <label for="chk" aria-hidden="true">Login</label>
+                    <input type="email" name="email" id="" placeholder="Email Or User Name" required="">
+                    <input type="password" name="password" id="" placeholder="password" required="">
+                    <button href="index.html">Login</button>
+                    <p>Don't have account <a href="index.html">Create account</a>.</p>
+
+                </form>
+            </div>
+        </div>
+    </body1>
+    <!-----------------------------BMI Calculator----------------------------------->
+      
+      <head>
+       <script>
+          function calc(){
+            h=Number(document.getElementById("height").value);
+            w=Number(document.getElementById("weight").value);
+            h=h/100;
+            bmi=Math.round(w/(h*h)*10)/10;
+            document.getElementById("bmi").value=bmi;
+
+            if (bmi<18.5) health="Underweight";
+            else if (18.5<bmi && bmi<25) health="Normal weight";
+            else if (25<bmi && bmi<30) health="Overweight";
+            else health="Obesity";
+            document.getElementById("health").value=health;
+          }
+          
+        </script>
+        </head>
+        <table class="one">
+            <tr><td> Enter The Height (cm) :</td><td><input id="height"></td></tr>
+            <tr><td> Enter The Weight (kg) :</td><td><input id="weight"></td></tr>
+            <tr><td>BMI :</td><td><input id="bmi"></td></tr>
+            <tr><td>Health :</td><td><input id="health"></td></tr>
+            <tr><td><button onclick="calc()">Calculate BMI</button></td></tr>
+            
+        </table>
+        <script src="scriptt.js"></script>
+     </body>
+     </html>
+
+
+
+
+
+
+
+
+
+
