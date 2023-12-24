@@ -512,7 +512,7 @@ h1{
     cursor: pointer;
 }
 /*Login & sign up*/
-body1 {
+body-1 {
     margin: 55px auto;
     padding: 50px;
     display:flex;
